@@ -1,5 +1,5 @@
 resources:
-- github.com/redhat-cop/gitops-catalog/ansible-automation-platform/instance/overlays/default
+- github.com/redhat-cop/gitops-catalog/tree/main/ansible-automation-platform/instance/overlays/default
 
 patches:
   - patch: |-
