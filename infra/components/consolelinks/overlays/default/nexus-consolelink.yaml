@@ -3,9 +3,9 @@ kind: ConsoleLink
 metadata:
   name: nexus
 spec:
-  href: 'https://nexus-dev-tools.${SUB_DOMAIN}'
+  href: 'https://nexus-dev-tools.apps-crc.testing'
   location: ApplicationMenu
   text: Nexus
   applicationMenu:
     section: Tools
-    imageURL: https://nexus-dev-tools.${SUB_DOMAIN}/favicon.png
+    imageURL: https://nexus-dev-tools.apps-crc.testing/favicon.png

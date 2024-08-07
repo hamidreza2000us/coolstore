@@ -15,7 +15,7 @@ spec:
               name: api-token
           env:
           - name: sub_domain
-            value: ${SUB_DOMAIN}
+            value: apps-crc.testing
           command:
             - /bin/bash
             - -c

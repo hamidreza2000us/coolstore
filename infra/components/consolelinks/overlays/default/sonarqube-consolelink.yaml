@@ -3,9 +3,9 @@ kind: ConsoleLink
 metadata:
   name: sonarqube
 spec:
-  href: 'https://sonarqube-dev-tools.${SUB_DOMAIN}'
+  href: 'https://sonarqube-dev-tools.apps-crc.testing'
   location: ApplicationMenu
   text: SonarQube
   applicationMenu:
     section: Tools
-    imageURL: https://sonarqube-dev-tools.${SUB_DOMAIN}/favicon.ico
+    imageURL: https://sonarqube-dev-tools.apps-crc.testing/favicon.ico

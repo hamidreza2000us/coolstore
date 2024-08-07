@@ -29,7 +29,7 @@ spec:
   repo:
     env:
       - name: SUB_DOMAIN
-        value: '${SUB_DOMAIN}'
+        value: 'apps-crc.testing'
     resources:
       limits:
         cpu: '1'

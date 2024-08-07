@@ -47,11 +47,11 @@ done
 
 echo "Fetching cluster subdomain"
 export SUB_DOMAIN=$(oc get ingress.config.openshift.io cluster -n openshift-ingress -o jsonpath='{.spec.domain}')
-echo "SUB_DOMAIN=${SUB_DOMAIN}"
+echo "SUB_DOMAIN=apps-crc.testing"
 
 echo "Apply overlay to override default instance"
 # echo "Create default instance of gitops operator"
-kustomize build infra/components/gitops-operator/instance/base | envsubst '${SUB_DOMAIN}' | oc apply -f -
+kustomize build infra/components/gitops-operator/instance/base | envsubst 'apps-crc.testing' | oc apply -f -
 
 sleep 10
 echo "Waiting for all pods to redeploy"

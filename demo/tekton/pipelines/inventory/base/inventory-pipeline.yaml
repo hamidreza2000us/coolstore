@@ -15,16 +15,16 @@ spec:
   - default: 1.0.0
     name: IMAGE_TAG
     type: string
-  - default: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/inventory-quarkus
+  - default: registry-quay-quay-operator.apps-crc.testing/coolstore/inventory-quarkus
     name: IMAGE_NAME
     type: string
-  - default: https://gitea-gitea.${SUB_DOMAIN}/user1/inventory-quarkus.git
+  - default: https://gitea-gitea.apps-crc.testing/user1/inventory-quarkus.git
     name: GIT_REPO
     type: string
   - default: main
     name: GIT_BRANCH
     type: string
-  - default: https://gitea-gitea.${SUB_DOMAIN}/user1/coolstore.git
+  - default: https://gitea-gitea.apps-crc.testing/user1/coolstore.git
     name: MANIFESTS_GIT_REPO
     type: string
   - default: main
@@ -32,11 +32,11 @@ spec:
     type: string
   - name: COLLECTION_TESTS_URL
     type: string
-    default: https://gitea-gitea.${SUB_DOMAIN}/user1/inventory-quarkus/raw/branch/main/tests/inventory-quarkus-tests.json
+    default: https://gitea-gitea.apps-crc.testing/user1/inventory-quarkus/raw/branch/main/tests/inventory-quarkus-tests.json
   - name: SONARQUBE_HOST
     type: string
     description: Hostname for sonarqube
-    default: sonarqube-dev-tools.${SUB_DOMAIN}
+    default: sonarqube-dev-tools.apps-crc.testing
   tasks:
   - name: variables
     taskRef:
@@ -189,7 +189,7 @@ spec:
     - name: CURRENT_IMAGE
       value: quay.io/coolstore-demo/inventory-quarkus
     - name: NEW_IMAGE
-      value: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/inventory-quarkus
+      value: registry-quay-quay-operator.apps-crc.testing/coolstore/inventory-quarkus
     - name: NEW_DIGEST
       value: $(tasks.buildah.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH
@@ -328,7 +328,7 @@ spec:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "* <https://console-openshift-console.${SUB_DOMAIN}/k8s/ns/coolstore-cicd/tekton.dev~v1beta1~PipelineRun/$(context.pipelineRun.name)|PipelineRun>\n* <$(params.IMAGE_NAME):$(params.IMAGE_TAG)|Quay Image>\n* <https://$(tasks.variables.results.acs_central_endpoint)/main/vulnerability-management/images/$(tasks.buildah.results.IMAGE_DIGEST)|ACS Scan>\n* <https://$(params.SONARQUBE_HOST)/dashboard?id=inventory-quarkus|SonarQube>"
+                  "text": "* <https://console-openshift-console.apps-crc.testing/k8s/ns/coolstore-cicd/tekton.dev~v1beta1~PipelineRun/$(context.pipelineRun.name)|PipelineRun>\n* <$(params.IMAGE_NAME):$(params.IMAGE_TAG)|Quay Image>\n* <https://$(tasks.variables.results.acs_central_endpoint)/main/vulnerability-management/images/$(tasks.buildah.results.IMAGE_DIGEST)|ACS Scan>\n* <https://$(params.SONARQUBE_HOST)/dashboard?id=inventory-quarkus|SonarQube>"
                 }
               },
               {

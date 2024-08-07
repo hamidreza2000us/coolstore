@@ -3,9 +3,9 @@ kind: ConsoleLink
 metadata:
   name: acs
 spec:
-  href: 'https://central-stackrox.${SUB_DOMAIN}'
+  href: 'https://central-stackrox.apps-crc.testing'
   location: ApplicationMenu
   text: Advanced Cluster Security
   applicationMenu:
     section: Red Hat Applications
-    imageURL: https://central-stackrox.${SUB_DOMAIN}/static/media/rh-favicon.0110fdfc.ico
+    imageURL: https://central-stackrox.apps-crc.testing/static/media/rh-favicon.0110fdfc.ico

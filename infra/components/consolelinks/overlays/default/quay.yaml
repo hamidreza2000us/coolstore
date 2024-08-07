@@ -3,11 +3,11 @@ kind: ConsoleLink
 metadata:
   name: quay
 spec:
-  href: 'https://registry-quay-quay-operator.${SUB_DOMAIN}'
+  href: 'https://registry-quay-quay-operator.apps-crc.testing'
   location: ApplicationMenu
   text: Quay
   applicationMenu:
     section: Red Hat Applications
-    imageURL: https://registry-quay-quay-operator.${SUB_DOMAIN}/static/img/quay_favicon.png
+    imageURL: https://registry-quay-quay-operator.apps-crc.testing/static/img/quay_favicon.png
     
 

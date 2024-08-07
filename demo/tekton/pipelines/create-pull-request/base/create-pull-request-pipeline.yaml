@@ -13,10 +13,10 @@ spec:
       default: main
     - name: MANIFESTS_GIT_REPO
       type: string
-      default: https://gitea-gitea.${SUB_DOMAIN}/user1/coolstore.git
+      default: https://gitea-gitea.apps-crc.testing/user1/coolstore.git
     - name: GITEA_SERVER
       type: string
-      default: gitea-gitea.${SUB_DOMAIN}
+      default: gitea-gitea.apps-crc.testing
     - name: IMAGE
       type: string
       description: External registry location of image to push without tag
@@ -28,7 +28,7 @@ spec:
     - name: SONARQUBE_HOST
       type: string
       description: Hostname for sonarqube
-      default: sonarqube-dev-tools.${SUB_DOMAIN}
+      default: sonarqube-dev-tools.apps-crc.testing
   tasks:
     - name: variables
       taskRef:

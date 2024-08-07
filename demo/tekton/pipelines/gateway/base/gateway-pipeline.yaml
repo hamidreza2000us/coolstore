@@ -7,16 +7,16 @@ spec:
   - default: 1.0.0
     name: IMAGE_TAG
     type: string
-  - default: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/gateway-vertx
+  - default: registry-quay-quay-operator.apps-crc.testing/coolstore/gateway-vertx
     name: IMAGE_NAME
     type: string
-  - default: https://gitea-gitea.${SUB_DOMAIN}/user1/gateway-vertx.git
+  - default: https://gitea-gitea.apps-crc.testing/user1/gateway-vertx.git
     name: GIT_REPO
     type: string
   - default: main
     name: GIT_BRANCH
     type: string
-  - default: https://gitea-gitea.${SUB_DOMAIN}/user1/coolstore.git
+  - default: https://gitea-gitea.apps-crc.testing/user1/coolstore.git
     name: MANIFESTS_GIT_REPO
     type: string
   - default: main
@@ -105,7 +105,7 @@ spec:
     - name: CURRENT_IMAGE
       value: quay.io/coolstore-demo/gateway-vertx
     - name: NEW_IMAGE
-      value: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/gateway-vertx
+      value: registry-quay-quay-operator.apps-crc.testing/coolstore/gateway-vertx
     - name: NEW_DIGEST
       value: $(tasks.buildah.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH
