@@ -1,5 +1,5 @@
 # Adapted from Tekton Catalog item
-# https://github.com/tektoncd/catalog/tree/main/task/send-to-webhook-slack/0.1
+# https://github.com/tektoncd/catalog//task/send-to-webhook-slack/0.1?ref=main
 apiVersion: tekton.dev/v1
 kind: Task
 metadata:

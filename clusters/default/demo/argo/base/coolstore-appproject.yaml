@@ -20,7 +20,7 @@ spec:
   - namespace: coolstore-prod
     server: https://kubernetes.default.svc
   sourceRepos:
-  - https://gitea-gitea.${SUB_DOMAIN}/user1/coolstore
+  - https://gitea-gitea.apps-crc.testing/user1/coolstore
   roles:
     - description: Coolstore Admins
       name: admin

@@ -25,7 +25,7 @@
 
     - name: Get instance definition
       set_fact:
-        openshift_gitops_cr: "{{ lookup('url', 'https://raw.githubusercontent.com/coolstore-demo/coolstore/main/infra/components/gitops-operator/instance/base/argocd-cr.yaml', split_lines=False) | replace('${SUB_DOMAIN}', sub_domain) }}"
+        openshift_gitops_cr: "{{ lookup('url', 'https://raw.githubusercontent.com/coolstore-demo/coolstore/main/infra/components/gitops-operator/instance/base/argocd-cr.yaml', split_lines=False) | replace('apps-crc.testing', sub_domain) }}"
 
     - name: Output definition
       debug:

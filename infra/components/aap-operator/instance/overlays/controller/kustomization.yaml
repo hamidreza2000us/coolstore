@@ -1,11 +1,11 @@
 resources:
-- github.com/redhat-cop/gitops-catalog/ansible-automation-platform/instance/overlays/default
+- github.com/redhat-cop/gitops-catalog//ansible-automation-platform/instance/overlays/default?ref=main
 
 patches:
   - patch: |-
       - op: replace
         path: /spec/href
-        value: "https://controller-ansible-automation-platform.${SUB_DOMAIN}"
+        value: "https://controller-ansible-automation-platform.apps-crc.testing"
       - op: replace
         path: /spec/applicationMenu/section
         value: "Red Hat Applications"

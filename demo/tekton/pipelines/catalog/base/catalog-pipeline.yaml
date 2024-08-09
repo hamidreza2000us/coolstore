@@ -7,16 +7,16 @@ spec:
   - default: 1.0.0
     name: IMAGE_TAG
     type: string
-  - default: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/catalog-spring-boot
+  - default: registry-quay-quay-operator.apps-crc.testing/coolstore/catalog-spring-boot
     name: IMAGE_NAME
     type: string
-  - default: https://gitea-gitea.${SUB_DOMAIN}/user1/catalog-spring-boot.git
+  - default: https://gitea-gitea.apps-crc.testing/user1/catalog-spring-boot.git
     name: GIT_REPO
     type: string
   - default: main
     name: GIT_BRANCH
     type: string
-  - default: https://gitea-gitea.${SUB_DOMAIN}/user1/coolstore.git
+  - default: https://gitea-gitea.apps-crc.testing/user1/coolstore.git
     name: MANIFESTS_GIT_REPO
     type: string
   - default: main
@@ -122,7 +122,7 @@ spec:
     - name: CURRENT_IMAGE
       value: quay.io/coolstore-demo/spring-boot-catalog
     - name: NEW_IMAGE
-      value: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/catalog-spring-boot
+      value: registry-quay-quay-operator.apps-crc.testing/coolstore/catalog-spring-boot
     - name: NEW_DIGEST
       value: $(tasks.buildah.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH
@@ -152,7 +152,7 @@ spec:
     - name: CURRENT_IMAGE
       value: quay.io/coolstore-demo/quay.io/coolstore-demo/spring-boot-catalog
     - name: NEW_IMAGE
-      value: registry-quay-quay-operator.${SUB_DOMAIN}/coolstore/catalog-spring-boot
+      value: registry-quay-quay-operator.apps-crc.testing/coolstore/catalog-spring-boot
     - name: NEW_DIGEST
       value: $(tasks.buildah.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH

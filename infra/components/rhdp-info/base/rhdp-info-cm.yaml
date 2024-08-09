@@ -6,4 +6,4 @@ metadata:
   labels:
     demo.redhat.com/userinfo: ""
 data:
-  quickstart: "https://console-openshift-console.${SUB_DOMAIN}/quickstart?quickstart=red-hat-coolstore"
+  quickstart: "https://console-openshift-console.apps-crc.testing/quickstart?quickstart=red-hat-coolstore"
