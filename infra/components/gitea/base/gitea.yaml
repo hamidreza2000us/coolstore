@@ -17,7 +17,7 @@ spec:
   giteaUserPassword: openshift
   giteaMigrateRepositories: true
   giteaRepositoriesList:
-  - repo: https://github.com/coolstore-demo/coolstore.git
+  - repo: https://github.com/hamidreza2000us/coolstore.git
     name: coolstore
     private: false
   - repo: https://github.com/coolstore-demo/inventory-quarkus.git

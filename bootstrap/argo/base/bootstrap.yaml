@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: clusters/rhdp/argo/base
-    repoURL: https://github.com/coolstore-demo/coolstore.git
+    repoURL: https://github.com/hamidreza2000us/coolstore.git
     targetRevision: main
     plugin:
       name: kustomize-envvar
