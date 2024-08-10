@@ -20,9 +20,6 @@ applications:
       namespace: coolstore-cicd
     source:
       path: demo/environments/overlays/cicd
-      extraSourceFields: |
-        plugin:
-          name: kustomize-envvar
 
   coolstore-dev:
     annotations:
@@ -31,9 +28,6 @@ applications:
       namespace: coolstore-dev
     source:
       path: demo/environments/overlays/dev
-      extraSourceFields: |
-        plugin:
-          name: kustomize-envvar
 
   coolstore-stage:
     annotations:
@@ -42,9 +36,6 @@ applications:
       namespace: coolstore-stage
     source:
       path: demo/environments/overlays/stage
-      extraSourceFields: |
-        plugin:
-          name: kustomize-envvar
 
   coolstore-prod:
     annotations:
@@ -53,6 +44,3 @@ applications:
       namespace: coolstore-prod
     source:
       path: demo/environments/overlays/prod
-      extraSourceFields: |
-        plugin:
-          name: kustomize-envvar
