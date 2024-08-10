@@ -12,7 +12,7 @@ secretGenerator:
       - config.yaml=config-bundle-secret/config.yaml
 
 resources:
-- github.com/redhat-cop/gitops-catalog//quay-operator/operator/overlays/stable-3.8?ref=main
+- github.com/redhat-cop/gitops-catalog///quay-operator/operator/overlays/stable-3.8?ref=main?ref=main
 - registry.yaml
 - init-user-password.yaml
 - init-quay-job.yaml

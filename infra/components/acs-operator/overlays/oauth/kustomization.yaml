@@ -2,8 +2,8 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-  - github.com/redhat-cop/gitops-catalog//advanced-cluster-security-operator/operator/overlays/latest?ref=main
-  - github.com/redhat-cop/gitops-catalog//advanced-cluster-security-operator/instance/overlays/internal-registry-integration?ref=main
+  - github.com/redhat-cop/gitops-catalog///advanced-cluster-security-operator/operator/overlays/latest?ref=main?ref=main
+  - github.com/redhat-cop/gitops-catalog///advanced-cluster-security-operator/instance/overlays/internal-registry-integration?ref=main?ref=main
   - init-acs.yaml
 
 patches:

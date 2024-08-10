@@ -5,7 +5,7 @@ metadata:
     alpha.image.policy.openshift.io/resolve-names: '*'
     app.openshift.io/route-disabled: 'false'
     app.openshift.io/vcs-ref: ''
-    app.openshift.io/vcs-uri: 'https://github.com/coolstore-demo/inventory-quarkus.git'
+    app.openshift.io/vcs-uri: 'https://github.com/hamidreza2000us/inventory-quarkus.git'
   name: inventory-quarkus
   labels:
     app: inventory-quarkus

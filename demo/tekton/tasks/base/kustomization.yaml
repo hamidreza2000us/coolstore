@@ -12,4 +12,4 @@ resources:
 - task-npm-quality.yaml
 - task-send-to-webhook-slack.yaml
 - task-generate-id.yaml
-- github.com/redhat-cop/gitops-catalog//openshift-pipelines-tasks/maven/overlays/m2-cache?ref=main
+- github.com/redhat-cop/gitops-catalog///openshift-pipelines-tasks/maven/overlays/m2-cache?ref=main?ref=main

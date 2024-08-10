@@ -7,7 +7,7 @@ metadata:
     alpha.image.policy.openshift.io/resolve-names: '*'
     app.openshift.io/route-disabled: 'false'
     app.openshift.io/vcs-ref: ''
-    app.openshift.io/vcs-uri: 'https://github.com/coolstore-demo/gateway-vertx.git'
+    app.openshift.io/vcs-uri: 'https://github.com/hamidreza2000us/gateway-vertx.git'
   labels:
     app: gateway-vertx
     app.kubernetes.io/component: gateway-vertx

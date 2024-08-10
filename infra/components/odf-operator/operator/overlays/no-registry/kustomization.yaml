@@ -1,5 +1,5 @@
 resources:
-- github.com/redhat-cop/gitops-catalog//openshift-data-foundation-operator/operator/overlays/stable-4.12?ref=main
+- github.com/redhat-cop/gitops-catalog///openshift-data-foundation-operator/operator/overlays/stable-4.12?ref=main?ref=main
 
 patches:
   - patch: |-

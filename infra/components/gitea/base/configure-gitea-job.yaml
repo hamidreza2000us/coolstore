@@ -30,7 +30,7 @@ spec:
               echo "tempuser:x:$(id -G | cut -d' ' -f 2)" >> /etc/group
               id
 
-              git clone https://github.com/coolstore-demo/coolstore
+              git clone https://github.com/hamidreza2000us/coolstore
               cd coolstore
               git checkout ${branch}
               cd infra/components/gitea/base/gitea-configure-playbook
