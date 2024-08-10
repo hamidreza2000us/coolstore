@@ -20,15 +20,15 @@ spec:
   - repo: https://github.com/hamidreza2000us/coolstore.git
     name: coolstore
     private: false
-  - repo: https://github.com/hamidreza2000us/inventory-quarkus.git
+  - repo: https://github.com/coolstore-demo/inventory-quarkus.git
     name: inventory-quarkus
     private: false
-  - repo: https://github.com/hamidreza2000us/web-nodejs.git
+  - repo: https://github.com/coolstore-demo/web-nodejs.git
     name: web-nodejs
     private: false
-  - repo: https://github.com/hamidreza2000us/catalog-spring-boot.git
+  - repo: https://github.com/coolstore-demo/catalog-spring-boot.git
     name: catalog-spring-boot
     private: false
-  - repo: https://github.com/hamidreza2000us/gateway-vertx.git
+  - repo: https://github.com/coolstore-demo/gateway-vertx.git
     name: gateway-vertx
     private: false
